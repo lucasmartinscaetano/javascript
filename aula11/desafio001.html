@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio prático</title>
+    <style>
+        body{
+            background-color: rgba(148, 61, 230, 0.596);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>TESTE DE NACIONALIDADE</h1>
+   <h2>Coloque seu País abaixo</h2>
+        
+            <input type="text" name="tstn" id="valornacionalidade">
+            <input type="button" value="nacionalidade" onclick="clicar">
+            <div id="res"></div>
+    <script>
+        function clicar() {
+            var box = document.querySelector('input#valornacionalidade')
+            var res = document.querySelector('div#res') 
+            var país = 'Brasil'
+            if(país == 'Brasil'){
+                res.innerHTML = 'Você é brasileiro!'
+            }else{
+                res.innerHTML = 'Você é estrangeiro!'
+            }
+        } 
+    </script>
+</body>
+</html>
