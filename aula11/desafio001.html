@@ -16,17 +16,17 @@
     <h1>TESTE DE NACIONALIDADE</h1>
    <h2>Coloque seu País abaixo</h2>
         
-            <input type="text" name="tstn" id="valornacionalidade">
-            <input type="button" value="nacionalidade" onclick="clicar">
+            <input type="text" name="valornacionalidade" id="valornacionalidade">
+            <input type="button" value="nacionalidade" onclick="clicar()">
             <div id="res"></div>
     <script>
-        function clicar() {
+        function clicar(){
             var box = document.querySelector('input#valornacionalidade')
-            var res = document.querySelector('div#res') 
-            var país = 'Brasil'
-            if(país == 'Brasil'){
+            var res = document.querySelector('div#res')
+            var país = (valornacionalidade.value)
+            if(país == 'Brasil'){   
                 res.innerHTML = 'Você é brasileiro!'
-            }else{
+            }else{  
                 res.innerHTML = 'Você é estrangeiro!'
             }
         } 
