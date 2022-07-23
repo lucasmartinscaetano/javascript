@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votos</title>
+    <style>
+        body{
+            background-color: rgba(189, 53, 53, 0.76);
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Você já pode votar?</h1>
+    <h2>Coloque sua idade na caixa abaixo</h2>
+    <input type="number" name="num" id="num">
+    <input type="button" value="checar" onclick="clicar()">
+    <div id="res"></div>
+    <script>
+        function clicar(){
+            var num = document.querySelector('input#num')
+            var res = document.querySelector('div#res')
+            var calc = Number(num.value)
+            if(calc < 16){
+                res.innerHTML = 'Não vota'
+            } else if ( calc < 18 || calc >= 65){
+                res.innerHTML = 'Voto opicional'
+            } else {
+                res.innerHTML = 'Voto obrigatório'
+            }
+        }
+    </script>
+
+</body>
+</html>
