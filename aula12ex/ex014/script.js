@@ -1,1 +1,1 @@
-alert('Cabeça de gelo')
+alert('Seja bem vindo!')
