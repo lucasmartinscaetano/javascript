@@ -1,0 +1,1 @@
+const currentPlayer = document.querySelector(".currentPlayer")

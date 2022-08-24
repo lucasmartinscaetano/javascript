@@ -2,7 +2,7 @@ function carregar(){
     var msg = document.querySelector('div#msg')
     var imagem = document.querySelector('img#imagem')
     var data = new Date()
-    var hora = 22
+    var hora = 13
     msg.innerHTML = `Agora são exatamente ${hora} horas`
     if (hora >= 0 && hora < 12){
         imagem.src = 'bomdiateste.png'
